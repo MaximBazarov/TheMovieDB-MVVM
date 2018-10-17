@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qiP-5K-eOK">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--The Movie DB-->
+        <scene sceneID="MOH-vy-qJ1">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="qiP-5K-eOK" customClass="MoviesListViewController" customModule="TheMovieDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ZJ-jF-3Yb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no movies for the request" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-UX-z00">
+                                <rect key="frame" x="25.333333333333343" y="371" width="324.66666666666663" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yTg-Uh-bGp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qiP-5K-eOK" id="ut5-QD-7qE"/>
+                                    <outlet property="delegate" destination="qiP-5K-eOK" id="kpC-24-P3D"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1cS-UX-z00" firstAttribute="centerY" secondItem="6ZJ-jF-3Yb" secondAttribute="centerY" id="7jH-6h-SPL"/>
+                            <constraint firstItem="1cS-UX-z00" firstAttribute="centerX" secondItem="6ZJ-jF-3Yb" secondAttribute="centerX" id="9hI-I1-nhJ"/>
+                            <constraint firstItem="1cS-UX-z00" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6ZJ-jF-3Yb" secondAttribute="leading" constant="16" id="TkM-cl-0ly"/>
+                            <constraint firstItem="yTg-Uh-bGp" firstAttribute="leading" secondItem="95t-vO-Ceh" secondAttribute="leading" id="U4u-dU-7gL"/>
+                            <constraint firstItem="yTg-Uh-bGp" firstAttribute="top" secondItem="6ZJ-jF-3Yb" secondAttribute="top" id="gR6-wt-y8J"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1cS-UX-z00" secondAttribute="trailing" constant="16" id="nmf-Xm-n0k"/>
+                            <constraint firstAttribute="bottom" secondItem="yTg-Uh-bGp" secondAttribute="bottom" id="qCi-KA-PYo"/>
+                            <constraint firstItem="95t-vO-Ceh" firstAttribute="trailing" secondItem="yTg-Uh-bGp" secondAttribute="trailing" id="qJE-hE-5vF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="95t-vO-Ceh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Movie DB" id="8ts-XB-9ZT"/>
+                    <connections>
+                        <outlet property="emptyDatasetLabel" destination="1cS-UX-z00" id="uhX-cN-GLm"/>
+                        <outlet property="tableView" destination="yTg-Uh-bGp" id="kd8-Ca-UMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WI0-KC-ufd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552.8" y="-523.15270935960598"/>
+        </scene>
+    </scenes>
+</document>
