@@ -1,16 +1,29 @@
 PODS:
   - Nuke (7.3.2)
+  - Unicore (0.0.5)
 
 DEPENDENCIES:
   - Nuke
+  - "Unicore (from `git@github.com:Unicore/Unicore.git`, branch `release-1-0`)"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nuke
 
+EXTERNAL SOURCES:
+  Unicore:
+    :branch: release-1-0
+    :git: "git@github.com:Unicore/Unicore.git"
+
+CHECKOUT OPTIONS:
+  Unicore:
+    :commit: 6e1ec270ec42f810f01bdb7de6d3da5afd6c5ae1
+    :git: "git@github.com:Unicore/Unicore.git"
+
 SPEC CHECKSUMS:
   Nuke: a9a31bbd6c6723753ab024ef22057dcaaf046c1b
+  Unicore: d3e9923d5b56b19136b4cca6824abe74f95fc24a
 
-PODFILE CHECKSUM: 8036db858536c6945f2c623512fb081742f9e8a9
+PODFILE CHECKSUM: f634e7bea34529e482e2cb4c90935f7a4bde67d4
 
 COCOAPODS: 1.5.3

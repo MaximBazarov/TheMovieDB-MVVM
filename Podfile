@@ -6,6 +6,7 @@ target 'TheMovieDB' do
   use_frameworks!
 
   pod 'Nuke'
+  pod 'Unicore', :git => 'git@github.com:Unicore/Unicore.git', :branch => 'release-1-0'
 
   target 'TheMovieDBTests' do
     inherit! :search_paths

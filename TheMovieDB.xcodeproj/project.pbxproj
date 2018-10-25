@@ -154,37 +154,6 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		FE2D8AE42163B20A00C9617E /* Movies List */ = {
-			isa = PBXGroup;
-			children = (
-				FED9F5C02158214E0095BF5B /* MoviesList.storyboard */,
-				FE2D8AE22163ABEF00C9617E /* MoviesListViewModel.swift */,
-				FE6094AC2160E1D90085414C /* MoviesListViewController.swift */,
-			);
-			path = "Movies List";
-			sourceTree = "<group>";
-		};
-		FE4ADFCE2158CCA900E48AE1 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				FE8EA139215CD25400E1D77A /* StringsListFileStorage.swift */,
-				FECE6C64215CA7A50063CBEF /* SuggestionsService.swift */,
-				FE4ADFCF2158CCA900E48AE1 /* API */,
-				FE2D8ADE21639C7200C9617E /* Observable.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		FE4ADFCF2158CCA900E48AE1 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				FE4ADFD42158CCA900E48AE1 /* URLSessionProtocol.swift */,
-				FE4ADFD12158CCA900E48AE1 /* Responses */,
-				FE4ADFD02158CCA900E48AE1 /* TheMovieDBAPI.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		FE4ADFD12158CCA900E48AE1 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,17 +174,6 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		FE6094AB2160E1690085414C /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				FE2D8AE42163B20A00C9617E /* Movies List */,
-				FE6094BB21612C060085414C /* Search Screen */,
-				FE6094BC21612D830085414C /* Movie Details Screen */,
-				FE6094B22160E3E80085414C /* Movie Cell */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
 		FE6094B22160E3E80085414C /* Movie Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +183,21 @@
 			path = "Movie Cell";
 			sourceTree = "<group>";
 		};
-		FE6094B421610BA50085414C /* Application */ = {
+		FE88FB3421819A5A00C9EBE0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FE88FB3521819A9800C9EBE0 /* Application */,
+				FEA1F54F2158CAD80072322D /* Domain */,
+				FE88FB3821819ACE00C9EBE0 /* Movies List */,
+				FE88FB3A21819B1200C9EBE0 /* Movie Details */,
+				FE88FB3721819AC700C9EBE0 /* Popular */,
+				FE88FB3621819ABF00C9EBE0 /* Search */,
+				FE88FB3921819AE800C9EBE0 /* TheMovieDB API */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FE88FB3521819A9800C9EBE0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				FED9F5BC2158214E0095BF5B /* AppDelegate.swift */,
@@ -234,23 +206,53 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		FE6094BB21612C060085414C /* Search Screen */ = {
+		FE88FB3621819ABF00C9EBE0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FE8EA139215CD25400E1D77A /* StringsListFileStorage.swift */,
+				FECE6C64215CA7A50063CBEF /* SuggestionsService.swift */,
 				FE6094B721612BD10085414C /* SearchViewController.swift */,
 				FE2D8AE02163AB3500C9617E /* SearchViewModel.swift */,
 				FE2D8AE52163B81900C9617E /* Search.storyboard */,
 			);
-			path = "Search Screen";
+			path = Search;
 			sourceTree = "<group>";
 		};
-		FE6094BC21612D830085414C /* Movie Details Screen */ = {
+		FE88FB3721819AC700C9EBE0 /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Popular;
+			sourceTree = "<group>";
+		};
+		FE88FB3821819ACE00C9EBE0 /* Movies List */ = {
+			isa = PBXGroup;
+			children = (
+				FE6094B22160E3E80085414C /* Movie Cell */,
+				FED9F5C02158214E0095BF5B /* MoviesList.storyboard */,
+				FE2D8AE22163ABEF00C9617E /* MoviesListViewModel.swift */,
+				FE6094AC2160E1D90085414C /* MoviesListViewController.swift */,
+			);
+			path = "Movies List";
+			sourceTree = "<group>";
+		};
+		FE88FB3921819AE800C9EBE0 /* TheMovieDB API */ = {
+			isa = PBXGroup;
+			children = (
+				FE4ADFD42158CCA900E48AE1 /* URLSessionProtocol.swift */,
+				FE4ADFD12158CCA900E48AE1 /* Responses */,
+				FE4ADFD02158CCA900E48AE1 /* TheMovieDBAPI.swift */,
+			);
+			path = "TheMovieDB API";
+			sourceTree = "<group>";
+		};
+		FE88FB3A21819B1200C9EBE0 /* Movie Details */ = {
 			isa = PBXGroup;
 			children = (
 				FE6094BD21612DA00085414C /* MovieDetailsViewController.swift */,
 				FE6094BF21612DAD0085414C /* MovieDetails.storyboard */,
 			);
-			path = "Movie Details Screen";
+			path = "Movie Details";
 			sourceTree = "<group>";
 		};
 		FEA1F5442158C7D10072322D /* API */ = {
@@ -289,21 +291,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FED1FBE9215A368500A74576 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FED1FBEA215A369E00A74576 /* MoviesListPaginator.swift */,
-				FEC9B0FA2168A4E20079775F /* PaginatedMoviesListModel.swift */,
-				FEC9B0F6216763350079775F /* PopularMoviesModel.swift */,
-				FEC9B0F821676D290079775F /* SearchModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		FED9F5B02158214E0095BF5B = {
 			isa = PBXGroup;
 			children = (
-				FED9F5DC215821610095BF5B /* Sources */,
+				FE88FB3421819A5A00C9EBE0 /* Sources */,
+				FED9F5DC215821610095BF5B /* MVVM */,
 				FED9F5BB2158214E0095BF5B /* Resources */,
 				FED9F5D0215821500095BF5B /* Tests */,
 				FED9F5BA2158214E0095BF5B /* Products */,
@@ -342,16 +334,16 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		FED9F5DC215821610095BF5B /* Sources */ = {
+		FED9F5DC215821610095BF5B /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				FE6094B421610BA50085414C /* Application */,
-				FE6094AB2160E1690085414C /* Presentation */,
-				FED1FBE9215A368500A74576 /* Models */,
-				FE4ADFCE2158CCA900E48AE1 /* Services */,
-				FEA1F54F2158CAD80072322D /* Domain */,
+				FE2D8ADE21639C7200C9617E /* Observable.swift */,
+				FED1FBEA215A369E00A74576 /* MoviesListPaginator.swift */,
+				FEC9B0FA2168A4E20079775F /* PaginatedMoviesListModel.swift */,
+				FEC9B0F6216763350079775F /* PopularMoviesModel.swift */,
+				FEC9B0F821676D290079775F /* SearchModel.swift */,
 			);
-			path = Sources;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,12 +509,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TheMovieDB/Pods-TheMovieDB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Unicore/Unicore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unicore.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
