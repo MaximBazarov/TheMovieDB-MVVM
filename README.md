@@ -4,14 +4,14 @@ Using open API of themoviedb.org
 
 ### Discover
  - Show list of the popular movies using `discovery.`
- - When I scroll​ ​to​ ​the​ ​bottom​ ​of​ ​the list, then​ ​the next​ ​page​ ​should​ ​load​ ​if​ ​available
+ - When I scroll to the bottom of the list, then the next page should load if available
 
 ### Search screen
-- When one enters a name of a movie (e.g., "Batman,"​ ​"Rocky")​ ​in​ ​the​ ​search​ ​box​ ​and tap​ ​on​ ​"search" button, then​ ​I​ ​should​ ​see​ ​a​ ​new​ ​list​ ​of movies.
-- When​ one taps and​ ​focus​ ​into​ ​the​ ​search​ ​box, hen​ ​an​ ​auto-suggest​ ​list​ ​view​ ​will​ ​display​ ​below​ ​the​ ​search​ ​box​ ​showing​ ​their​ ​last ten​ ​successful​ ​queries​ ​(exclude​ ​suggestions​ ​that​ ​return​ ​errors)
- - When​ ​I​ ​select​ ​a​ ​suggestion, then​ ​the​ ​search​ ​results​ ​of​ ​the​ ​suggestion​ ​will​ ​be​ ​shown.
-- When​ ​I​ ​scroll​ ​to​ ​the​ ​bottom​ ​of​ ​the list, then​ ​the next​ ​page​ ​should​ ​load​ ​if​ ​available
-- Suggestions​ ​should​ ​be​ ​persisted.
+- When one enters a name of a movie (e.g., "Batman," "Rocky") in the search box and tap on "search" button, then I should see a new list of movies.
+- When one taps and focus into the search box, hen an auto-suggest list view will display below the search box showing their last ten successful queries (exclude suggestions that return errors)
+ - When I select a suggestion, then the search results of the suggestion will be shown.
+- When I scroll to the bottom of the list, then the next page should load if available
+- Suggestions should be persisted.
 
 ### Details screen
 - when tap on the movie on any list the details screen should be shown.
