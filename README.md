@@ -4,11 +4,11 @@ Using open API of themoviedb.org
 
 ### Discover
  - Show list of the popular movies using `discovery.`
- - When​ ​I​ ​scroll​ ​to​ ​the​ ​bottom​ ​of​ ​the list, then​ ​the next​ ​page​ ​should​ ​load​ ​if​ ​available
+ - When I scroll​ ​to​ ​the​ ​bottom​ ​of​ ​the list, then​ ​the next​ ​page​ ​should​ ​load​ ​if​ ​available
 
-### Search​ ​screen
-- When​ one enters​ ​a​ ​name​ ​of​ ​a​ ​movie​ ​(e.g.,​ ​"Batman,"​ ​"Rocky")​ ​in​ ​the​ ​search​ ​box​ ​and tap​ ​on​ ​"search​" ​button, then​ ​I​ ​should​ ​see​ ​a​ ​new​ ​list​ ​of movies.
-- When​ one ​taps​ ​and​ ​focus​ ​into​ ​the​ ​search​ ​box, hen​ ​an​ ​auto-suggest​ ​list​ ​view​ ​will​ ​display​ ​below​ ​the​ ​search​ ​box​ ​showing​ ​their​ ​last ten​ ​successful​ ​queries​ ​(exclude​ ​suggestions​ ​that​ ​return​ ​errors)
+### Search screen
+- When one enters a name of a movie (e.g., "Batman,"​ ​"Rocky")​ ​in​ ​the​ ​search​ ​box​ ​and tap​ ​on​ ​"search" button, then​ ​I​ ​should​ ​see​ ​a​ ​new​ ​list​ ​of movies.
+- When​ one taps and​ ​focus​ ​into​ ​the​ ​search​ ​box, hen​ ​an​ ​auto-suggest​ ​list​ ​view​ ​will​ ​display​ ​below​ ​the​ ​search​ ​box​ ​showing​ ​their​ ​last ten​ ​successful​ ​queries​ ​(exclude​ ​suggestions​ ​that​ ​return​ ​errors)
  - When​ ​I​ ​select​ ​a​ ​suggestion, then​ ​the​ ​search​ ​results​ ​of​ ​the​ ​suggestion​ ​will​ ​be​ ​shown.
 - When​ ​I​ ​scroll​ ​to​ ​the​ ​bottom​ ​of​ ​the list, then​ ​the next​ ​page​ ​should​ ​load​ ​if​ ​available
 - Suggestions​ ​should​ ​be​ ​persisted.
@@ -17,10 +17,10 @@ Using open API of themoviedb.org
 - when tap on the movie on any list the details screen should be shown.
 
 ### The Movie cell and detail screen should consist of:
-- Movie​ ​Poster
-- Movie​ ​name
-- Release​ ​date
-- Full​ ​Movie​ ​Overview
+- Movie Poster
+- Movie name
+- Release date
+- Full Movie Overview
 ___
 
 ## Run
@@ -73,14 +73,3 @@ Presentation layer only consists of Views (screens) and their View models.
 
 #### Services
 Service layer contains all services, classes that do work (usually in the background) and provide data to the application. Here are only API and Storage.
-
-## Third part dependencies
-
-I only used `Nuke` for image from url downloading to save me tons of time and I hope this is not the idea of code challenge.
-
-## Tests
-
-I am sorry, during the time pressure I tried to comprehend the UI and MVVM and tested only the business logic and not all the cases, my general strategy here is to test the main cases and add cases for bugs is happened.
-
-Have fun reviewing it!
-And I'm looking forward to hearing your feedback on this.
